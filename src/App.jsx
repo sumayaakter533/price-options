@@ -1,5 +1,4 @@
 import "./App.css";
-import "daisyui";
 
 function App() {
     return (
@@ -8,7 +7,7 @@ function App() {
                 React with Tailwind CSS
             </h1>
 
-            <div className='navbar bg-base-100'>
+            <div className='navbar bg-base-100 my-10'>
                 <div className='navbar-start'>
                     <div className='dropdown'>
                         <div
@@ -81,7 +80,7 @@ function App() {
                 </div>
             </div>
 
-            <div className='stats shadow'>
+            <div className='stats shadow '>
                 <div className='stat'>
                     <div className='stat-figure text-primary'>
                         <svg

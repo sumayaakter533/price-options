@@ -33,9 +33,31 @@
   }
   ```
 
-NOTE: If *`require`* is giving warning then to remove the warning -
+NOTE: If *`require`* is giving warning then to remove the warning there are 2 method -
 
-- Replace require with import:
+- Method-1: Add `node:true` to `eslint.config.js`
+
+  ```js
+  // eslint.config.js
+  env: {
+          browser: true,
+          node: true,
+        }
+  ```
+
+  ```js
+    // tailwind.config.js
+    export default {
+      content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+        extend: {},
+    },
+
+    plugins: [require("daisyui")],
+    };
+  ```
+
+- Method-2: Replace require with import
 
   ```js
   // tailwind.config.js
