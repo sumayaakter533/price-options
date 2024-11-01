@@ -1,10 +1,13 @@
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 	return (
 		<>
-			<h1 className="text-center text-4xl font-semibold text-slate-950">
+			<h1 className="text-4xl font-semibold text-slate-950 flex items-center justify-center gap-4">
 				React with Tailwind CSS
+				<FontAwesomeIcon icon={faHome} className="text-3xl" />
 			</h1>
 
 			<div className="navbar bg-base-100 my-10">

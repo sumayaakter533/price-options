@@ -74,7 +74,7 @@ NOTE: If *`require`* is giving warning then to remove the warning there are 2 me
   };
   ```
 
-### Apply prettier custom rule in React project
+## Apply prettier custom rule in React project
 
 - `npm install --save-dev prettier`
 - add the following rules in `.prettierrc` file in root
@@ -92,3 +92,9 @@ NOTE: If *`require`* is giving warning then to remove the warning there are 2 me
     "arrowParens": "always"
   }
   ```
+
+## Add Font Awesome
+
+```node
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome`
+```
