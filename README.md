@@ -73,3 +73,22 @@ NOTE: If *`require`* is giving warning then to remove the warning there are 2 me
     plugins: [daisyui],
   };
   ```
+
+### Apply prettier custom rule in React project
+
+- `npm install --save-dev prettier`
+- add the following rules in `.prettierrc` file in root
+
+  ```json
+  {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": true,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "arrowParens": "always"
+  }
+  ```
