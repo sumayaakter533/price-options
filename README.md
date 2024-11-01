@@ -29,6 +29,25 @@
   ```js
   module.exports = {
   //...
-    plugins: ["daisyui"],
+    plugins: [require("daisyui")],
   }
+  ```
+
+NOTE: If *`require`* is giving warning then to remove the warning -
+
+- Replace require with import:
+
+  ```js
+  // tailwind.config.js
+  import daisyui from 'daisyui';
+
+  export default {
+    content: [
+      "./src/**/*.{js,jsx,ts,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [daisyui],
+  };
   ```
