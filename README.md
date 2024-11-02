@@ -112,3 +112,9 @@ function App() {
 ```
 
 ***NOTE:** Add other icons like this one.*
+
+---
+
+### Add Prop Validation
+
+- `npm install prop-types`
