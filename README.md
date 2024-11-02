@@ -93,7 +93,13 @@ NOTE: If *`require`* is giving warning then to remove the warning there are 2 me
   }
   ```
 
-## Add Font Awesome
+## Install React Icons
+
+- `npm install react-icons --save`
+
+---
+
+### Add Font Awesome (only)
 
 ```node
 npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome`
@@ -112,6 +118,26 @@ function App() {
 ```
 
 ***NOTE:** Add other icons like this one.*
+
+To remove font awesome:
+
+```node
+npm uninstall @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
+```
+
+After this command remove these also:
+
+```jsx
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+function App() {
+  return (
+    <FontAwesomeIcon icon={faHome}
+  )
+}
+```
 
 ---
 

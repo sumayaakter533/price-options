@@ -1,0 +1,3 @@
+.hover-li-style {
+	@apply hover:bg-slate-50 hover:text-slate-950 transition-all ease-linear duration-300 md:p-2 rounded-md;
+}
