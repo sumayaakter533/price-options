@@ -98,3 +98,17 @@ NOTE: If *`require`* is giving warning then to remove the warning there are 2 me
 ```node
 npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome`
 ```
+
+```jsx
+// App.jsx
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
+function App() {
+  return (
+    <FontAwesomeIcon icon={faHome}
+  )
+}
+```
+
+***NOTE:** Add other icons like this one.*
