@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '../Link/Link';
 
 const CustomNav = () => {
 	const routes = [
@@ -13,9 +14,7 @@ const CustomNav = () => {
 		<nav className="my-10">
 			<ul className="flex justify-center items-center gap-10">
 				{routes.map((route) => (
-					<li key={route.id}>
-						<a href={`route.pathe`}>{route.name}</a>
-					</li>
+					<Link key={route.id} route={route}></Link>
 				))}
 			</ul>
 		</nav>
