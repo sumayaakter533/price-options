@@ -1,6 +1,7 @@
 import './App.css';
 import CustomNav from './components/CustomNav/CustomNav';
 import LineChart from './components/LineChart/LineChart';
+import Phones from './components/Phones/Phones';
 import PriceOptions from './components/PriceOptions/PriceOptions';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 				<CustomNav></CustomNav>
 				<PriceOptions></PriceOptions>
 				<LineChart></LineChart>
+				<Phones></Phones>
 			</section>
 		</>
 	);
