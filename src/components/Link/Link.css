@@ -1,3 +1,11 @@
 .hover-li-style {
-	@apply hover:bg-slate-50 hover:text-slate-950 transition-all ease-linear duration-300 md:p-2 rounded-md;
+	@apply text-center py-1 px-4
+	bg-slate-300
+	text-slate-950
+	transition-all
+	duration-300
+	font-medium
+	ease-linear
+	rounded-md
+	block;
 }

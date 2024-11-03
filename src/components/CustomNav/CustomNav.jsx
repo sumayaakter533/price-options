@@ -13,9 +13,9 @@ const CustomNav = () => {
 	];
 
 	return (
-		<nav className="bg-purple-950 text-white ">
-			<div className="">
-				<p className="flex justify-between items-center md:hidden text-2xl p-6">
+		<nav className="text-white ">
+			<div className="bg-purple-950 border-b md:hidden">
+				<p className="flex justify-between items-center text-2xl p-6">
 					Menu
 					<button
 						className="md:hidden flex justify-between"
@@ -30,7 +30,9 @@ const CustomNav = () => {
 				</p>
 			</div>
 			<ul
-				className={`flex flex-col md:flex-row justify-center items-center gap-4 p-6 pt-0 md:p-6 text-center ${open ? '' : 'hidden'}`}
+				className={`bg-purple-950 p-6 translate-y-0 transition-transform duration-300 flex flex-col md:flex-row justify-center gap-4 ${
+					open ? 'translate-x-0' : '-translate-x-full'
+				} `}
 			>
 				{routes.map((route) => (
 					<Link key={route.id} route={route}></Link>
